@@ -101,6 +101,10 @@ Using [Schtasks](https://docs.microsoft.com/en-us/windows-server/administration/
 
 Refer to this [post](https://stackoverflow.com/questions/16700749/setting-up-cron-task-in-plesk-11)
 
+It seems to work best when you create two cronjobs like shown in the image, but use in the arguments section 
+in the first cronjob cron/run >/dev/null 2>&1
+in the second cronjob queue/run >/dev/null 2>&1
+
 ![](http://i.imgur.com/TbWEsjC.png)
 
 ### OVH
